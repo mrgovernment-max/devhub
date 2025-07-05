@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Montserrat', sans-serif;
+    color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(3px);
+    animation: fadeIn 1.3s ease;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #a66cff;
+    text-shadow: 0 0 10px #a66cff88;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #cfcfcf;
+  }
+  
+  /* Project Grid */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(166, 108, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(166, 108, 255, 0.4);
+  }
+  
+  .card h2 {
+    color: #d4b5ff;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .card p {
+    font-size: 15px;
+    color: #e4e4e4;
+    margin-bottom: 20px;
+  }
+  
+  .card a {
+    background: linear-gradient(135deg, #a66cff, #8f6ee0);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 0 10px #a66cff55;
+    transition: background 0.3s ease;
+  }
+  
+  .card a:hover {
+    background: linear-gradient(135deg, #8f6ee0, #a66cff);
+    box-shadow: 0 0 15px #a66cff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #18142b;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  }
+  
