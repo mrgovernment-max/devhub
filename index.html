@@ -3,79 +3,677 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emman's Project Links</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Emmanuel Fenteng | Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-J3TYPJTRMX"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-J3TYPJTRMX");
-  </script>
-
   <body>
-    <header class="hero">
-      <h1>Welcome to Emman's Dev Space</h1>
-      <p>One page. All my best projects.</p>
+    <!-- Header & Navigation -->
+    <header id="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Portfo<span>lio.</span></a>
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="projects">
-      <div class="card">
-        <h2>E-commerce Portfolio</h2>
-        <p>A stylish, modern online shop (not completed).</p>
-        <a
-          href="https://mrgovernment-max.github.io/e-commerce-portfolio/"
-          target="_blank"
-          >Visit Site <i class="fas fa-arrow-up-right-from-square"></i
-        ></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm <span>Emmanuel Fenteng</span><br />Web Developer</h1>
+          <p>
+            I create beautiful, responsive websites and applications with modern
+            technologies. Passionate about clean code and user experience.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
       </div>
-
-      <div class="card">
-        <h2>PROSPECT FC</h2>
-        <p>
-          A fullstack website built and managed by myself for an EBFL team in
-          Reading (PROSPECT FC)
-        </p>
-        <a href="https://prospectfc.com/ " target="_blank"
-          >Visit Prospect FC <i class="fas fa-arrow-up-right-from-square"></i
-        ></a>
-      </div>
-
-      <div class="card">
-        <h2>Pokémon Search App</h2>
-        <p>Explore your favorite Pokémon using a fast search API.</p>
-        <a href="https://mrgovernment-max.github.io/Pokemon/ " target="_blank"
-          >Open Pokémon App <i class="fas fa-arrow-up-right-from-square"></i
-        ></a>
-      </div>
-
-      <div class="card">
-        <h2>Personal Project</h2>
-        <p>My full dev portfolio showing skills, projects, and contact info.</p>
-        <a
-          href="https://mrgovernment-max.github.io/Project/index.html#"
-          target="_blank"
-          >See Portfolio <i class="fas fa-arrow-up-right-from-square"></i
-        ></a>
-      </div>
-
-    
+      <div class="hero-shape"></div>
     </section>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <!--Breif one about me-->
+          <div class="about-text">
+            <h3>I'm Emmanuel Fenteng, a Web Developer</h3>
+            <p>
+              With over 3 years of experience in web development, I specialize
+              in creating responsive, user-friendly websites and applications.
+              I'm passionate about turning complex problems into simple,
+              beautiful designs.
+            </p>
+            <p>
+              My expertise includes HTML5, CSS3, JavaScript, React, and modern
+              Web frameworks. I'm constantly learning and adapting to new
+              technologies to deliver the best solutions for my clients.
+            </p>
+            <div class="skills">
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Vue.js</span>
+              <span class="skill">SASS</span>
+              <span class="skill">UI/UX Design</span>
+              <span class="skill">Responsive Design</span>
+              <span class="skill">MY SQL</span>
+              <span class="skill">NodeJS</span>
+              <span class="skill">Etc..</span>
+            </div>
+          </div>
+
+          <!--Brief one about my education-->
+
+          <div class="about-text">
+            <h3>Education and Training</h3>
+            <div class="work-history">
+              <p style="color: yellowgreen">
+                Solomon Bennett Memorial School [Ghana , Sunyani]
+              </p>
+              <p style="color: yellowgreen">2015 - 2022</p>
+            </div>
+            <p>
+              From primary through junior high school, I built the foundation
+              for my learning journey. I developed essential skills like
+              reading, writing, and arithmetic, while exploring science and
+              social studies. Over the years, I grew my curiosity,
+              problem-solving abilities, teamwork, and communication skills
+              through projects, group work, and extracurricular activities,
+              preparing me for the challenges ahead.
+            </p>
+            <div class="skills">
+              <span class="skill">Primary School Fundamentals</span>
+              <span class="skill">Intermediate Learning</span>
+              <span class="skill">High School Basics</span>
+              <span class="skill">Junior High Core Skills</span>
+              <span class="skill">Study & Research</span>
+              <span class="skill">Critical Thinking</span>
+              <span class="skill">Problem Solving</span>
+              <span class="skill">Time Management</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Communication Skills</span>
+            </div>
+            <div style="margin-top: 3%" class="work-history">
+              <p style="color: yellowgreen">
+                St Augustines College [Ghana , Cape Coast]
+              </p>
+              <p style="color: yellowgreen">2022 - 2024</p>
+            </div>
+            <p>
+              During my secondary school years, I deepened my knowledge in core
+              subjects and explored new areas like technology, languages, and
+              creative arts. I honed critical thinking, leadership, and teamwork
+              skills through class projects, extracurricular activities, and
+              school events, laying the groundwork for my personal growth and
+              future ambitions.This period was when I started my web development
+              journey.
+            </p>
+            <div class="skills">
+              <span class="skill">Teamwork</span>
+              <span class="skill">Time Management</span>
+              <span class="skill">Communication</span>
+              <span class="skill">Problem Solving</span>
+              <span class="skill">Adaptability</span>
+              <span class="skill">Leadership</span>
+              <span class="skill">Resilience</span>
+              <span class="skill">Collaboration</span>
+              <span class="skill">Organizational Skills</span>
+            </div>
+
+            <div style="margin-top: 3%" class="work-history">
+              <p style="color: yellowgreen">
+                Web & Software Development Programme | ITonlinelearning [Reading
+                , Uk]
+              </p>
+              <p style="color: yellowgreen">2025</p>
+            </div>
+            <p>
+              During my Web & Software Development programme at
+              ITonlinelearning, I gained hands-on experience in building
+              websites and software applications. I developed key programming
+              languages, frameworks, and development tools, while developing
+              problem-solving, project management, and practical coding skills
+              that prepared me for real-world tech projects.
+            </p>
+            <div class="skills">
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">Python</span>
+              <span class="skill">Git</span>
+              <span class="skill">Github</span>
+              <span class="skill">PhP</span>
+              <span class="skill">Command Line</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">UI/UX Design</span>
+              <span class="skill">Responsive Design</span>
+              <span class="skill">API Integration</span>
+              <span class="skill">Problem Solving</span>
+              <span class="skill">Project Management</span>
+            </div>
+
+            <div style="margin-top: 3%" class="work-history">
+              <p style="color: yellowgreen">Reading College [Reading , UK]</p>
+              <p style="color: yellowgreen">Till Date</p>
+            </div>
+            <p>
+              After moving to the UK, I continued my education at Reading
+              College, where I focused on further developing my technical and
+              digital skills. This period allowed me to strengthen my knowledge
+              in web and software development, enhance my problem-solving
+              abilities, and gain practical experience working on projects that
+              prepared me for real-world tech challenges.
+            </p>
+            <div class="skills">
+              <span class="skill">Adaptation</span>
+              <span class="skill">Patience</span>
+              <span class="skill">Recovery</span>
+              <span class="skill">Versitility</span>
+            </div>
+          </div>
+
+          <!--Certifications-->
+          <div class="about-text">
+            <h3>CERTIFICATIONS</h3>
+            <div class="work-history">
+              <p style="color: yellowgreen">Amazon Cloud Practinioner</p>
+              <p style="color: yellowgreen">2025</p>
+            </div>
+            <p>
+              Earned the AWS Certified Cloud Practitioner certification,
+              demonstrating foundational knowledge of cloud concepts, core AWS
+              services, security, architecture, pricing, and support. Gained a
+              solid understanding of how to leverage AWS cloud solutions to
+              enhance scalability, reliability, and efficiency in projects and
+              business applications.
+            </p>
+            <a
+              class="about-anchor"
+              href="https://www.credly.com/badges/c32edf33-053c-4f36-ad69-c38432c15d5e"
+              >View Certification</a
+            >
+
+            <div class="skills">
+              <span class="skill">Cloud Computing Fundamentals</span>
+              <span class="skill"
+                >AWS Core Services (EC2, S3, RDS, Lambda)</span
+              >
+              <span class="skill">Security & Compliance</span>
+              <span class="skill">Cloud Architecture Basics</span>
+              <span class="skill">Cost Management & Pricing Models</span>
+              <span class="skill">Best Practices & Scalability</span>
+              <span class="skill">Problem-Solving in Cloud Environments</span>
+            </div>
+
+            <div style="margin-top: 3%" class="work-history">
+              <p style="color: yellowgreen">Azure Fundamentals</p>
+              <p style="color: yellowgreen">2025</p>
+            </div>
+            <p>
+              Completed the Microsoft Azure Fundamentals certification, gaining
+              a solid understanding of cloud concepts, core Azure services,
+              security, compliance, and pricing. Developed foundational skills
+              in deploying, managing, and monitoring resources on Azure, and
+              learned best practices for building scalable and secure cloud
+              solutions.
+            </p>
+            <a
+              class="about-anchor"
+              href="https://learn.microsoft.com/api/credentials/share/en-us/EmmanuelPapaKofiFenteng-6391/62E5262FFC3FB0E7?sharingId=51E668558EBC07BC"
+              >View Certification</a
+            >
+            <div class="skills">
+              <span class="skill">Cloud Concepts</span>
+              <span class="skill">Core Azure Services</span>
+              <span class="skill">Azure Pricing & Cost Management</span>
+              <span class="skill">Azure Security & Compliance</span>
+              <span class="skill">Resource Deployment & Management</span>
+              <span class="skill">Monitoring & Reporting</span>
+              <span class="skill">Networking Basics in Azure</span>
+              <span class="skill">Scalability & High Availability</span>
+            </div>
+          </div>
+
+          <!--Work Experience-->
+          <div class="about-text">
+            <h3>Work Experience</h3>
+            <div class="work-history">
+              <p style="color: yellowgreen">Kitchen Assistant</p>
+              <p style="color: yellowgreen">05/2025 - 07/2025</p>
+            </div>
+            <p>
+              Worked as a restaurant team member delivering high-quality
+              customer service in a fast-paced environment. Took and served
+              orders efficiently, maintained clean and organised dining areas,
+              and handled payments with accuracy. Collaborated closely with
+              kitchen and bar staff to ensure smooth operations, assisted in
+              training new employees, and supported large bookings and special
+              events. Promoted menu specials to increase sales while maintaining
+              professionalism and resolving customer issues effectively
+            </p>
+            <div class="skills">
+              <span class="skill">Customer Service</span>
+              <span class="skill">Order Taking & Serving</span>
+              <span class="skill">Hygiene & Safety</span>
+              <span class="skill">Payment Handling</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Adaptability</span>
+              <span class="skill">Training New Staff</span>
+              <span class="skill">Event Coordination</span>
+              <span class="skill">Problem Solving</span>
+              <span class="skill">Resilience</span>
+              <span class="skill">Etc..</span>
+            </div>
+
+            <div style="margin-top: 3%" class="work-history">
+              <p style="color: yellowgreen">Freelancer</p>
+              <p style="color: yellowgreen">2025</p>
+            </div>
+            <p>
+              Completed the Microsoft Azure Fundamentals certification while
+              working as a freelance web developer, creating websites for
+              Prospect FC and other clients. Gained a solid understanding of
+              cloud concepts, core Azure services, security, compliance, and
+              pricing, and developed foundational skills in deploying, managing,
+              and monitoring resources on Azure. Applied best practices to build
+              scalable and secure cloud-based solutions for real-world projects.
+            </p>
+            <div class="skills">
+              <span class="skill">Time Management</span>
+              <span class="skill">Client Communication</span>
+              <span class="skill">Project Planning</span>
+              <span class="skill">Problem-Solving</span>
+              <span class="skill">Adaptability</span>
+              <span class="skill">Collaboration</span>
+              <span class="skill">Creativity</span>
+              <span class="skill">Attention to Detail</span>
+              <span class="skill">Accountability</span>
+              <span class="skill">Professionalism</span>
+              <span class="skill">Negotiation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://res.cloudinary.com/dazhskqcc/image/upload/v1758931677/4ff3452a-da31-4241-a481-b3fe70af98b8_tfrnlt.jpg"
+                alt="Prospect Fc "
+              />
+            </div>
+            <div class="project-content">
+              <h3>Prospect Fc</h3>
+              <p>
+                A fan-first website for Prospect FC featuring fixtures &
+                results, player profiles, league tables, photo galleries, match
+                reports etc.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Render</span>
+                <span class="project-tag">SQL</span>
+                <span class="project-tag">API</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <div class="project-links">
+                <a href="https://prospectfc.com/" class="project-link"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/mrgovernment-max/ProspectFC"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2i -->
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                alt="E-commerce Website"
+              />
+            </div>
+            <div class="project-content">
+              <h3>E-commerce Platform</h3>
+              <p>
+                A fully responsive e-commerce website with product filtering,
+                cart functionality, and secure checkout.
+                <span style="color: yellowgreen"> (Not Completed )</span>
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Html</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MY SQL</span>
+                <span class="project-tag">Stripe API</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://mrgovernment-max.github.io/e-commerce-portfolio/"
+                  class="project-link"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a
+                  href="https://github.com/mrgovernment-max/e-commerce-portfolio"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="project-card"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              background: rgba(255, 255, 255, 0.02);
+              border: 1px dashed rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="project-content">
+              <h3>More Projects Coming Soon 🚧</h3>
+              <p>
+                Exciting new builds are in progress — stay tuned for fresh
+                launches and creative web projects.
+              </p>
+              <div class="project-tags" style="justify-content: center">
+                <span class="project-tag">Web Dev</span>
+                <span class="project-tag">Design</span>
+                <span class="project-tag">Innovation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Work Together</h3>
+            <p>
+              I'm currently available for freelance work and full-time
+              positions. Feel free to reach out if you have a project in mind or
+              just want to connect!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>efenteng1@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+44 730 950 8293</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Reading , UK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Enter subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <div class="send-btn" id="send-btn">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+                <i id="loader" class="fa-solid fa-spinner"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Emmanuel Fenteng. All rights reserved.</p>
+      <div class="container">
+        <div class="footer-content">
+          <a href="#" class="logo">Portfo<span>lio.</span></a>
+          <p>Creating beautiful and functional digital experiences</p>
+          <div class="social-links">
+            <a href="https://github.com/mrgovernment-max" class="social-link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="www.linkedin.com/in/emmanuel-fenteng-135092308"
+              class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              href="https://www.instagram.com/_idonmindit?igsh=cGRsYWtscnhnNTNs&utm_source=qr"
+              class="social-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Emmanuel Fenteng. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        // Change icon when menu is open
+        if (navLinks.classList.contains("active")) {
+          menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+        } else {
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Contact form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const subject = document.getElementById("subject").value.trim();
+          const message = document.getElementById("message").value.trim();
+          const loader = document.getElementById("loader");
+          loader.style.display = "block";
+
+          try {
+            const res = await fetch(
+              "https://backendroutes-lcpt.onrender.com/contactme",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, subject, message }),
+              }
+            );
+
+            let data;
+
+            try {
+              data = await res.json();
+            } catch {
+              console.error("Response was not JSON");
+              showMessage("Message failed. Please try again.", "error");
+              return;
+            }
+
+            // Handle backend response
+            if (res.ok && data.success) {
+              showMessage(
+                "Your message has been sent successfully!",
+                "success"
+              );
+              this.reset();
+            } else {
+              showMessage(
+                data.message || "Something went wrong. Try again.",
+                "error"
+              );
+            }
+          } catch (err) {
+            console.error("Fetch error:", err);
+            showMessage(
+              "Network error. Please check your connection.",
+              "error"
+            );
+          }
+        });
+
+      // Optional: function to show messages
+      function showMessage(text, type) {
+        loader.style.display = "none";
+        const msg = document.createElement("div");
+        msg.className = `form-message ${type}`;
+        msg.textContent = text;
+
+        document.querySelector(".form-status")?.remove();
+        msg.classList.add("form-status");
+        document.getElementById("contactForm").appendChild(msg);
+
+        setTimeout(() => msg.remove(), 4000);
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
