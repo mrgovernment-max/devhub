@@ -37,6 +37,7 @@ h4 {
 
 .container {
   width: 90%;
+  z-index: 7;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -193,7 +194,7 @@ header.scrolled {
 
 .hero-content {
   max-width: 650px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .hero h1 {

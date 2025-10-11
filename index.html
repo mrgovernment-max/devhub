@@ -37,7 +37,10 @@
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-content">
-          <h1>Hi, I'm <span>Emmanuel Fenteng</span><br /> a Web Developer</h1>
+          <h1>
+            Hi, I'm <span>Emmanuel Fenteng</span><br />
+            a Web Developer
+          </h1>
           <p>
             I create beautiful, responsive websites and applications with modern
             technologies. Passionate about clean code and user experience.
@@ -656,24 +659,6 @@
 
         setTimeout(() => msg.remove(), 4000);
       }
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
     </script>
   </body>
 </html>
