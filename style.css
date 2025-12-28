@@ -220,15 +220,40 @@ header.scrolled {
 
 .hero-shape {
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   width: 500px;
   height: 500px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  border-radius: 50%;
-  opacity: 0.1;
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent, #00ffcc)
+  );
+  border-radius: 50% 30% 70% 40% / 40% 50% 60% 70%;
+  opacity: 0.2;
   z-index: 1;
+  filter: blur(20px);
+  animation: liquid-flow 12s ease-in-out infinite;
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.1),
+    0 0 150px rgba(var(--primary-rgb, 100, 200, 255), 0.3);
+}
+
+@keyframes liquid-flow {
+  0%,
+  100% {
+    border-radius: 50% 30% 70% 40% / 40% 50% 60% 70%;
+    transform: translateY(-50%) scale(1) rotate(0deg);
+  }
+  33% {
+    border-radius: 60% 40% 40% 70% / 70% 40% 60% 40%;
+    transform: translateY(-50%) scale(1.1) rotate(120deg);
+  }
+  66% {
+    border-radius: 40% 60% 70% 40% / 50% 60% 40% 60%;
+    transform: translateY(-50%) scale(0.9) rotate(240deg);
+  }
 }
 
 /* About Section */
