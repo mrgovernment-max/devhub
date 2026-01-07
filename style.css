@@ -37,6 +37,7 @@ h4 {
 
 .container {
   width: 100%;
+  max-width:1400px;
   z-index: 7;
   margin: 0 auto;
 }
