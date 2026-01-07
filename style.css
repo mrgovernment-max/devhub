@@ -184,7 +184,6 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
-  width:90%;
   height: 100vh;
   display: flex;
   align-items: center;
