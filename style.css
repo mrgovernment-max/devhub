@@ -36,7 +36,8 @@ h4 {
 }
 
 .container {
-  max-width:1400px;
+  width: 90%;
+  max-width: 1200px;
   z-index: 7;
   margin: 0 auto;
 }
@@ -184,9 +185,12 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
+  width: 100%;
+  margin: auto;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
 }
