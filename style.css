@@ -230,33 +230,67 @@ header.scrolled {
   height: 500px;
   background: linear-gradient(
     135deg,
-    var(--primary),
-    var(--secondary),
-    var(--accent, #00ffcc)
+    var(--primary) 0%,
+    #ff6b9d 25%,
+    var(--secondary) 50%,
+    #9d4edd 75%,
+    var(--accent, #00ffcc) 100%
   );
   border-radius: 50% 30% 70% 40% / 40% 50% 60% 70%;
-  opacity: 0.2;
+  opacity: 0.25;
   z-index: 1;
   filter: blur(20px);
-  animation: liquid-flow 12s ease-in-out infinite;
-  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.1),
-    0 0 150px rgba(var(--primary-rgb, 100, 200, 255), 0.3);
+  animation: lava-lamp 12s ease-in-out infinite;
+  box-shadow: inset 0 0 150px rgba(255, 255, 255, 0.3),
+    0 0 200px rgba(var(--primary-rgb, 100, 200, 255), 0.5),
+    0 0 100px rgba(255, 107, 157, 0.4), 0 0 100px rgba(157, 78, 221, 0.4);
+  mix-blend-mode: screen;
 }
 
-@keyframes liquid-flow {
-  0%,
-  100% {
-    border-radius: 50% 30% 70% 40% / 40% 50% 60% 70%;
+@keyframes lava-lamp {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
     transform: translateY(-50%) scale(1) rotate(0deg);
+    background-position: 0% 0%;
   }
-  33% {
-    border-radius: 60% 40% 40% 70% / 70% 40% 60% 40%;
-    transform: translateY(-50%) scale(1.1) rotate(120deg);
+  20% {
+    border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%;
+    transform: translateY(-50%) scale(1.1) rotate(36deg);
+    background-position: 100% 0%;
   }
-  66% {
-    border-radius: 40% 60% 70% 40% / 50% 60% 40% 60%;
-    transform: translateY(-50%) scale(0.9) rotate(240deg);
+  40% {
+    border-radius: 70% 30% 50% 50% / 30% 70% 30% 70%;
+    transform: translateY(-50%) scale(0.95) rotate(72deg);
+    background-position: 100% 100%;
   }
+  60% {
+    border-radius: 30% 70% 70% 30% / 70% 30% 70% 30%;
+    transform: translateY(-50%) scale(1.05) rotate(108deg);
+    background-position: 0% 100%;
+  }
+  80% {
+    border-radius: 50% 50% 30% 70% / 50% 50% 70% 30%;
+    transform: translateY(-50%) scale(0.98) rotate(144deg);
+    background-position: 50% 50%;
+  }
+  100% {
+    border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+    transform: translateY(-50%) scale(1) rotate(180deg);
+    background-position: 0% 0%;
+  }
+}
+
+/* For this animation, update your background to: */
+.hero-shape {
+  background: linear-gradient(
+    45deg,
+    #ff3366,
+    #ff9966,
+    #ffcc33,
+    #33ccff,
+    #9966ff
+  );
+  background-size: 400% 400%;
 }
 
 /* About Section */
